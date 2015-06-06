@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- APH002 Theme by aphex http://www.aphexthemes.com -->
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<link rel="alternate stylesheet" type="text/css" media="all" title="blue" href="<{$xoops_imageurl}>css/blue.css" />
+<link rel="alternate stylesheet" type="text/css" media="all" title="red" href="<{$xoops_imageurl}>css/red.css" />
+<link rel="alternate stylesheet" type="text/css" media="all" title="green" href="<{$xoops_imageurl}>css/green.css" />
+<link rel="alternate stylesheet" type="text/css" media="all" title="grey" href="<{$xoops_imageurl}>css/grey.css" />
+	<script src="<{$xoops_imageurl}>scripts/dw_cookies.js" type="text/javascript"></script>
+	<script src="<{$xoops_imageurl}>scripts/aph002preloads.js" type="text/javascript"></script>
+	<script src="<{$xoops_imageurl}>scripts/styleswitcher.js" type="text/javascript"></script>
+<{$xoops_module_header}>
+</head>
+<body>
+<!-- ### START OF MAIN WRAPPER ### -->
+<div class="wrapper">
+<!--### START OF HEADER ### -->
+<div id="aphmenu">
+	<div id="APH002-01_">
+	</div>
+	<div id="APH002-02_">
+	<a href=""><div class="hlinks"> Home </div></a>
+	</div>
+	<div id="APH002-03_">
+	<a href=""><div class="hlinks"> News </div></a>
+	</div>
+	<div id="APH002-04_">
+	<a href=""><div class="hlinks"> Forum </div></a>
+	</div>
+	<div id="APH002-05_">
+	<a href=""><div class="hlinks"> Downloads </div></a>
+	</div>
+	<div id="APH002-06_">
+	<a href=""><div class="hlinks"> Weblinks </div></a>
+	</div>
+	<div id="APH002-07_">
+	<div style="padding-top: 20px;float: right;padding-right: 30px">
+					<a href="#" onclick="setActiveStyleSheet('blue'); return false;"><img src="<{$xoops_imageurl}>visual/colors_06.jpg" width="27" height="11" alt="" /></a>
+					<a href="#" onclick="setActiveStyleSheet('red'); return false;"><img src="<{$xoops_imageurl}>visual/colors_05.jpg" width="27" height="11" alt="" /></a>
+					<a href="#" onclick="setActiveStyleSheet('green'); return false;"><img src="<{$xoops_imageurl}>visual/colors_04.jpg" width="27" height="11" alt="" /></a>
+					<a href="#" onclick="setActiveStyleSheet('grey'); return false;"><img src="<{$xoops_imageurl}>visual/colors_03.jpg" width="27" height="11" alt="" /></a>
+	</div>
+	</div>
+</div>
+<div class="header">
+ <div style="float: left">
+        <h1><{$xoops_sitename}></h1>
+        <h2><{$xoops_slogan}></h2>
+        <h3><{$xoops_pagetitle}></h3>
+</div>
+<div style="float: right;margin-right: 20px">
+<script language="JavaScript" type="text/javascript">
+  <!--
+    var now = new Date();
+    var days = new Array(
+      'Sunday','Monday','Tuesday',
+      'Wednesday','Thursday','Friday','Saturday');
+    var months = new Array(
+      'Jan','Feb','Mar','Apr','May',
+      'Ju','Jul','Aug','Sept','Oct',
+      'Nov','Dec');
+    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+    function fourdigits(number)	{
+      return (number < 1000) ? number + 1900 : number;}
+    today =  days[now.getDay()] + ", " +
+	months[now.getMonth()] + " " +
+       date + " ";
+     document.write(today);
+  //-->
+</script>
+</div>
+</div>
+<!-- ### END OF HEADER ### -->
+
+<div class="left">
+<!-- ## START OF NAVIGATION ## -->
+<{foreach item=block from=$xoops_lblocks}>
+	<div class="infobox">
+		<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+	</div>
+	<{/foreach}>
+<!-- ## END OF NAVIGATION ## -->
+
+
+<!-- ### END INFO BOX ### -->
+</div>
+<!-- ### END OF LEFT COLUMN ### -->
+<!-- ### MAIN CONTENT START ### -->
+<{if $xoops_rblocks}>
+<div class="centerr">
+<{else}>
+<div class="center">
+<{/if}>
+<{foreach item=block from=$xoops_ccblocks}>
+<div class="post">
+<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+</div>
+	<{/foreach}>
+<div>
+<{foreach item=block from=$xoops_clblocks}>
+<div class="post1">
+<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+</div>
+	<{/foreach}>
+</div>
+<{foreach item=block from=$xoops_crblocks}>
+<div class="post2">
+<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+</div>
+	<{/foreach}>
+ <{if $xoops_contents}>
+<{if $xoops_rblocks}>
+	  <div class="contr">
+<{else}>
+<div class="cont">
+<{/if}>
+          <{$xoops_contents}>
+ </div>
+ <{/if}>
+       <{if $xoBlocks.page_bottomcenter}>
+	<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+<div class="post3">
+<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+</div>
+	<{/foreach}>
+ <{/if}>
+		<{foreach from=$xoBlocks.page_bottomleft item=block}>
+<div class="post4">
+<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+</div>
+	<{/foreach}>
+		<{foreach from=$xoBlocks.page_bottomright item=block}>
+<div class="post5">
+<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+</div>
+	<{/foreach}>
+</div>
+<div style="clear:both;"></div><!--### END MAIN CONTENT ### -->
+<div class="right">
+<!-- ## START OF NAVIGATION ## -->
+<{foreach item=block from=$xoops_rblocks}>
+	<div class="infobox">
+		<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+	</div>
+	<{/foreach}>
+<!-- ## END OF NAVIGATION ## -->
+
+
+<!-- ### END INFO BOX ### -->
+</div>
+
+<div class="clear"></div>
+</div>
+<!-- ### END OF WRAPPER ### -->
+<!-- ### START OF FOOTER ### -->
+<div class="footer">
+<p><{$xoops_footer}></p>
+<br />
+<br />
+<p>Design by <a href="http://www.aphexthemes.com" title="Designer's Link">Aph3x</a></p>
+</div>
+<!-- ### END OF FOOTER ### -->
+<br />
+<br />
+</body>
+</html>
+
